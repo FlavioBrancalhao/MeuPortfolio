@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="PT-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="imagem/png" href="../img/icone.png" />
+    <script src="../javas/js.js"></script>
+   
+  
+
+    <title>Flávio Brancalhão</title>
+    <style>
+  *{
+    margin: 0;padding: 0; text-decoration: none;
+}
+/*fontes*/
+.font5{
+    /*preta*/
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.font1{
+ /*titulos com cor branca*/
+ color: white;
+ font-size: 1.2em;
+}
+.font3{
+    color: white;
+    font-size: 1em;
+  
+}
+.font4{
+  color: white;
+ font-size: 0.7em;
+}
+.font2 a{
+    /*links*/
+    color: white;
+    text-decoration: underline;
+}
+
+
+header{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: white;
+    color: black;
+}
+.linkmenu{
+    color: black;
+    font-size: normal;
+    
+}
+.linkmenu:hover{
+    color: white;
+}
+#tcore{
+    outline: none;
+    color: black;
+    font-size: 2em;
+    margin-left: 2%;
+}
+
+header a{
+    outline: none;
+    color: black;
+    
+}
+header button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 1em;
+    outline:none;
+}
+header button:first-child:hover{
+    border-top: solid 1px white;
+}
+header button:hover{
+    background-color: black;
+    color: white;
+    transition: 1.2s;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+     
+}
+
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: white;
+    border-radius: 100%;
+    bottom: -25px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    
+}
+.slider label:hover{
+    background: gray;
+}
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+.slider li:nth-child(4) label {
+    left: 100px;
+}
+.slider li:nth-child(5) label {
+    left: 130px;
+}
+.slider li:nth-child(6) label {
+    left: 160px;
+}
+.slider li:nth-child(7) label {
+    left: 190px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+.slider {
+    display: block;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto ;
+    margin-top: 5px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: 0 auto;
+    width:  100%;
+    height: 150px;
+    vertical-align: top;
+}
+.tarja{
+    margin: 0 auto;
+    width: 90%;
+    height: 30px;
+    background: black;
+}
+.cv{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 5px;
+}
+.projetos{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 5%;
+
+}
+.info{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.leftlist{
+    margin-left: 15px;
+}
+.tarja2{
+    margin-top: 5px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+table{
+    border: solid 1px;
+    width: auto;
+    margin: 0 auto;
+}
+table tr th:first-child{
+    text-align: left;
+    width: 30%;
+    border-right: solid 1px;
+   
+}
+
+
+
+.porcJava{
+    width: 40px;
+    height: 10px;
+    background-color: yellowgreen;
+}
+.porcC{
+    width: 30px;
+    height: 10px;
+    background-color: yellowgreen;
+}
+.porcCsh{
+    width: 65px;
+    height: 10px;
+    background-color: yellowgreen;
+}
+.porcAs{
+    width: 35px;
+    height: 10px;
+    background-color: yellowgreen;
+}
+.porcHTML{
+    width: 85px;
+    height: 10px;
+    background-color: yellowgreen;
+}
+.porcCSS{
+    width: 70px;
+    height: 10px;
+    background-color: yellowgreen;
+}
+.porcJS{
+    width: 10px;
+    height: 10px;
+    background-color: yellowgreen;
+}
+.porcRes{
+    width: 160px;
+    height: 10px;
+    background-color: yellowgreen;
+}
+.boxTags{
+   padding-top: 5px;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.divider{
+   
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;
+    align-items: center;
+}
+.info2 ol li a:hover{
+    color: green;
+}
+.boxTags button{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.boxTags button:hover{
+    background-color: aqua;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(58, 55, 55);
+    text-align: center;
+}
+.redes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+.redes i{
+    margin: 10px;
+    color: white;
+}
+.redes i:hover{
+color: green;
+}
+footer img{
+    width: 65px;
+    height: auto;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 100%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+footer a{
+    color: white;
+    outline: none;
+}
+footer a:hover{
+    color: green;
+}
+@media screen and (min-width: 700px) {
+    .slider {
+        display: block;
+        width: 787px;
+        height: 300px;
+        margin: 0 auto ;
+        margin-top: 5px;
+        position: relative;
+    }
+    .slider img{
+        width: 787px;
+        height: 300px;
+    }
+    .tarja{
+        width: 787px;
+    }
+    .info2{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        background: black;
+    }
+    nav button{
+        width: 250px;
+        padding: 10px;
+        border-bottom: solid 1px black;
+    }
+    .some{
+        display: none;
+    }
+    footer img{
+        width: 120px;
+    }
+  }
+  .font5{
+    /*preta*/
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.font1{
+ /*titulos com cor branca*/
+ color: white;
+ font-size: 1.7em;
+}
+.font3{
+    color: white;
+    font-size: 1.2em;
+  
+}
+.font4{
+  color: white;
+ font-size: 1em;
+}
+.font2 a{
+    /*links*/
+    color: white;
+    text-decoration: underline;
+}
+
+
+    </style>
+    <script>
+        function myFunction() {
+    
+    var x = document.getElementById("drop");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+      x.style.transition = "3s";
+    } else {
+      x.style.display = "flex";
+      x.style.transition = "0s";
+    }
+    var y = document.getElementById("core");
+    if (y.style.background === "black") {
+      y.style.background = "white";
+      y.style.transition = "1s";
+     
+    } else {
+      y.style.background = "black";
+      y.style.transition = "0s";
+     
+    }
+    var z = document.getElementById("tcore");
+    if(z.style.color === "white"){
+        z.style.color = "black";
+        y.style.transition = "1s";
+    }
+    else{
+        z.style.color="white";
+        y.style.transition = "1s";
+    }
+  }
+
+  
+    </script>
+</head>
+<body>
+ 
+    <header id="core">
+        <div class="some">
+       <a href="javascript:void(0);" onclick="myFunction()"  id="tcore"><i class="fa fa-bars" ></i></a></div>
+       <nav id="drop">
+        <a href="#inicio"><button> Inicio</button></a>
+        <a href="#curriculo"> <button>Currículo</button></a>
+        <a href="#projetos"><button>Projetos</button></a>
+            <a href="#contato"><button>Contato</button></a>
+
+    </nav>
+       
+      
+    </header>
+  <main>
+    <ul class="slider" id="inicio"> 
+        <li>
+              <input type="radio" id="slide1" name="slide" checked>
+              <label for="slide1"></label>
+              <img src="../img/testeimg.png" />
+        </li>
+        <li>
+              <input type="radio" id="slide2" name="slide">
+              <label for="slide2"></i></i></label>
+              <img src="../img/imgteste.jpg" />
+        </li>
+        <li>
+              <input type="radio" id="slide3" name="slide">
+              <label for="slide3"></label>
+              <img src="../img/java.png" />
+        </li>
+        <li>
+            <input type="radio" id="slide4" name="slide">
+            <label for="slide4"></label>
+            <img src="../img/c.png" />
+      </li>
+      <li>
+              <input type="radio" id="slide5" name="slide">
+              <label for="slide5"></label>
+              <img src="../img/js.jpg" />
+        </li>
+        <li>
+            <input type="radio" id="slide6" name="slide">
+            <label for="slide6"></label>
+            <img src="../img/csr.jpg" />
+      </li>
+        <li>
+            <input type="radio" id="slide7" name="slide">
+            <label for="slide7"></label>
+            <img src="../img/android.png" />
+      </li>
+      
+    </ul>
+    <div class="tarja"></div>
+    <div class="cv">
+        <div class="info">
+        <h1 class="font1" id="curriculo">Currículo</h1>
+        <h6 class="font2"><a href="https://drive.google.com/file/d/1Y7pjwIiudyLdOU8Eemc_iTxz3W2SvZnK/view?usp=sharing" target="_blank" download>Download cv</a></h6> <br>
+        <h3 class="font3">Flávio Garcia Brancalhão</h3>
+        <h4 class="font4" >Tecnologia da informação (T.I)</h4>
+        <br>
+        <h1 class="font1">Formação:</h1>
+        <br>
+        <h2 class="font3">Ensino superior</h2>
+        <h2 class="font3">Analise e desenvolvimento de sistemas (Formado) - Anhanguera educacional</h2>
+        <h3 class="font4">06/2020</h3>
+        <br>
+        <h1 class="font1">Habilidade principais:</h1>
+        <br>
+            <ul class="font3">
+                <h4 class="font1">Programação:</h4>
+                <li class="leftlist">Java (Básico)</li>
+                <li class="leftlist">C,C++ (Básico)</li>
+                <li class="leftlist">C# (Intermediário)</li>
+                <li class="leftlist">Android Studio (Básico)</li>
+                <li class="leftlist">HTML (Intermediário)</li>
+                <li class="leftlist">CSS (Intermediário)</li>
+                <li class="leftlist">Javascript (Básico)</li>
+                <li class="leftlist">Desenvolvimento web responsivo</li>
+                <br>
+                <h4 class="font1">Aplicações de escritório</h4>
+                <li  class="leftlist">Microsoft excel (Básico)</li>
+                <li class="leftlist">Microsoft Word (Intermediário)</li>
+                <li class="leftlist">Microsoft PowerPoint (Intermediário)</li>
+                <li class="leftlist">outlook (Intermediário)</li>
+                <br>
+                <h4 class="font1">Idiomas:</h4>
+                <li class="leftlist">Inglês (Básico)</li>
+                
+            </ul>
+
+    </div>
+    </div>
+    <div class="tarja2">
+       <h1 class="font5"> Relatório de desenvolvimento pessoal</h1>
+       <table >
+        <tr>
+          <th>Linguagem</th>
+          <th>Nível:</th> 
+          <tr>
+              <td></td>
+              <td >Básico Médio Avançado</td>
+          </tr>
+       
+        <tr>
+        <td>Java</td>
+        <td><div class="porcJava"></div></td>
+    </tr>
+     
+        <tr>
+        <td>C,C++</td>
+        <td><div class="porcC"></div></td>
+    </tr>
+     
+        <tr>
+        <td>C#</td>
+        <td><div class="porcCsh"></div></td>
+    </tr>
+      
+        <tr>
+        <td>Android Studio</td>
+        <td><div class="porcAs"></div></td>
+    </tr>
+      
+        <tr>
+        <td>HTML</td>
+        <td><div class="porcHTML"></div></td>
+    </tr>
+      
+        <tr>
+        <td>CSS</td>
+        <td><div class="porcCSS"></div></td>
+    </tr>
+      
+        <tr>
+        <td>JS</td>
+        <td><div class="porcJS"></div></td>
+    </tr>
+      
+        <tr>
+        <td>Responsivo(WEB)</td>
+        <td><div class="porcRes"></div></td>
+    </tr>
+    
+</table>
+</div>
+
+      <div class="boxTags">
+          <div class="divider">
+              <h1 class="font5">Tags: </h1><br>
+          <button>Empático</button>
+          <button>Criativo</button>
+        </div>
+        <div class="divider">
+          <button>Comunicativo</button>
+          <BUtton>Aberto</BUtton>
+          <button>Participativo</button>
+      </div>
+      <div class="divider">
+        <button>Organizado</button>
+        <BUtton>Descontraído</BUtton>
+    </div>
+    <div class="divider">
+        <button>Objetivo</button>
+    </div>
+    </div>
+ <div class="cv">
+     <div class="info info2">
+        <h1 class="font1">Projetos:</h1>
+        <h2 class="font3">Projetos com link GitHub</h2>
+        <ol class="font2" id="projetos">
+            <li><a href="https://flaviobrancalhao.github.io/Login-tela/">Tela de login (HTML)</a></li>
+            <li><a href="https://drive.google.com/file/d/1NsUn91_fK3x5M10iHszOZCnhTt7TH6nN/view?usp=sharing">Avaliação de estabelecimento (C#)</a><a href="https://github.com/FlavioBrancalhao/avaliar">/ Link do código</a></li>
+            <li><a href="https://drive.google.com/file/d/1uX8iDNMOMP7XGj6CCtRQqELlvxo-a2nH/view?usp=sharing">Cardápio App (Xml android Studio)</a></li>
+            <li><a href="https://flaviobrancalhao.github.io/EmailTela/">Tela de e-mail</a></li>
+            <li><a href="https://flaviobrancalhao.github.io/Among-Us-Tela">Tela among-us jogo(celular)</a></li>
+            <li><a href="https://flaviobrancalhao.github.io/WW">Tela-whatsapp</a></li>
+            <li><a href="https://flaviobrancalhao.github.io/Conversa/">Tela-Conversa yolanda</a></li>
+           
+        </ol>
+        
+    </div>
+ </div>
+
+  </main>
+  
+    <footer>
+        <h1 class="font1">Contato</h1>
+        <div class="redes" id="contato">
+           <a href="https://twitter.com/FlavioBrancalh1"> <i class="fa fa-twitter" aria-hidden="true"></i></a> 
+            <a href="https://www.facebook.com/flavio.brancalhao"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <a href="https://www.linkedin.com/in/flavio-brancalhao-659574169/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+           <a href="https://github.com/FlavioBrancalhao"><i class="fa fa-github" aria-hidden="true"></i></a> 
+           
+        </div>
+        <div class="font3">
+       <a href="mailto:fgbrancalhao@gmail.com"><i class="fa fa-share" aria-hidden="true">fgbrancalhao@gmail.com</i></a> 
+       <br><a href="https://api.whatsapp.com/send?phone=5511987704919"
+       target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i><i class="fa fa-whatsapp" aria-hidden="true">(11) 987704919</i></a>
+    </div>
+    <img src="../img/perfil.jpeg" alt="eu">
+    </footer>
+</body>
+</html>
